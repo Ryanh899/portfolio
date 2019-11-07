@@ -146,3 +146,39 @@
 .brewModalButton {
     width: 100%;
 }
+
+/* skills section  */
+
+#skills-section {
+    height: 100vh;
+    background-image: url('../images/wave-background.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+#skills-title {
+    font-size: 100px;
+    color: white;
+}
+
+#skills-overlay-container {
+        width: 100%; 
+        height: 100vh; 
+        background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.skills-icons {
+    height: 150px; 
+    width: 100%;
+}
+
+.skills-menu-text {
+    color: white;
+}
+
+#express {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+

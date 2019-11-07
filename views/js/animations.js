@@ -31,3 +31,7 @@ $('#brew-card').on('click', function () {
         .modal('show'); 
 })
 
+$('.menu .item')
+  .tab()
+;
+
