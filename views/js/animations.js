@@ -5,17 +5,17 @@ $(function() {
         .transition({
             animation : 'fade',
             reverse   : 'false', // default setting
-            duration: 1500, 
-            interval  : 2000
+            duration: 3000, 
+            interval  : 1000
         });
     }, 300); 
 });
 
 
-$('.ui.sticky')
-  .sticky({
-    context: '#page-container'
-  }); 
+// $('.ui.sticky')
+//   .sticky({
+//     context: $(this.window)
+//   }); 
 
 $('#vision-card').on('click', function () {
     $('.ui.modal.vision')

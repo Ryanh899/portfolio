@@ -1,240 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ryan Hazzard</title>
     <!-- You MUST include jQuery before Fomantic -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.8/dist/semantic.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.8/dist/semantic.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.8/dist/semantic.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/intro-arrow.css">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/intro-arrow.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+  <body>
     <!-- page container  -->
     <div class="ui grid container" id="page-container">
-        <!-- menu row  -->
-        <div class="middle aligned row">
-            <div class="ui fixed menu" id="navbar-menu">
-                <!-- menu inner grid  -->
-                <div class="ui grid container" id="navbar-inner-grid">
-                    <div class="row">
-                        <!-- title and icon  -->
-                        <div class="middle aligned four wide computer only  column item" id="menu-title-name">
-                            Ryan Hazzard
-                        </div>
-                        <div class="one wide middle aligned column item">
-                            <i class="big code branch icon" id="menu-title-icon"></i>
-                        </div>
-                        <!-- about  -->
-                        <div class="middle aligned two wide computer three wide mobile column item">
-                            <a class="menu-links">About</a>
-                        </div>
-                        <!-- projects  -->
-                        <div class="middle aligned three wide computer four wide mobile column item">
-                            <a class="menu-links">Projects</a>
-                        </div>
-                        <!-- resume  -->
-                        <div class="middle aligned three wide computer three wide mobile column item">
-                            <a class="menu-links">Resume</a>
-                        </div>
-                        <!-- contact  -->
-                        <div class="middle aligned three wide computer four wide mobile column item">
-                            <a class="menu-links">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="middle aligned row" id="landing-outer-row">
-            <div class="ui middle aligned grid container">
-                <div class="sixteen wide centered column" id="fade-column">
-                    <h1 class="sequenced name" style="display: none;" id="landing-name">Ryan Hazzard </h1>
-                    <h2 class="sequenced name" style="display: none;" id="landing-title">Full Stack Developer</h2>
-                </div>
-                <div class="sixteen wide column" id="landing-arrow-column">
-                    <a href="#about-section">
-                        <svg class="arrows" style="scroll-behavior: smooth">
-                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
-                        </svg>
+      <!-- menu row  -->
+      <div class="middle aligned row">
+        <div class="ui fixed menu" id="navbar-menu">
+          <!-- menu inner grid  -->
+          <div class="ui grid container" id="navbar-inner-grid">
+            <div class="row">
+              <!-- title and icon  -->
+              <div
+                class="middle aligned four wide computer only  column item"
+                id="menu-title-name"
+              >
+                Ryan Hazzard
+              </div>
+              <div class="one wide middle aligned column item">
+                <i class="big code branch icon" id="menu-title-icon"></i>
+              </div>
+              <!-- about  -->
+              <div
+                class="middle aligned two wide computer four wide mobile column item"
+              >
+                <a href="#about-section" class="menu-links">About</a>
+              </div>
+              <!-- projects  -->
+              <div
+                class="middle aligned three wide computer five wide mobile column item"
+              >
+                <a href="#project-section" class="menu-links">Projects</a>
+              </div>
+              <!-- contact  -->
+              <div
+                class="middle aligned three wide computer five wide mobile column item"
+              >
+                <a href="#contact-section" class="menu-links">Contact</a>
+              </div>
+              <!-- resume  -->
+              <div
+                class="middle aligned three wide computer only column item"
+              >
+                <a class="menu-links" >
+                  <div class="ui buttons">
+                    <a
+                    target="_blank"
+                    href="https://docs.google.com/document/d/179sKKqYy2Sxgpd_7olH7EXEzCldP6Yzz/edit"
+                    >
+                        <button class="ui button">Resume</button>
+                    </a>
+                    <div class="or"></div>
+                    <a
+                    target="_blank"
+                    href="https://github.com/Ryanh899"
+                    >
+                        <button class="ui button">Github</button>
                     </a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- about section  -->
-        <div class="row" id="about-section">
-            <div class="ui grid container" id="about-inner-grid">
-                <div class="eight wide computer sixteen wide mobile middle aligned column">
-                    <img class="ui centered bordered large image" id="about-image" src="/images/about-photo.jpg">
-                </div>
-                <div class="eight wide computer sixteen wide mobile middle aligned centered column"
-                    id="about-info-column">
-                    <p id="about-section-title">About</p>
-                    <div class="text" id="about-text">
-                        Ryan Hazzard, 20, born in San Clemente. I am a Full-stack developer proficient with the
-                        MERN stack. I am driven to becoming a better developer everyday. I care deeply about writing dry
-                        code and am currently looking for a career in which I can contribute and grow as a developer.
-                    </div>
-                </div>
+      </div>
+      <div class="middle aligned row" id="landing-outer-row">
+        <div class="ui middle aligned grid container">
+          <div class="sixteen wide centered column" id="fade-column">
+            <h1 class="sequenced name" style="display: none;" id="landing-name">
+              Ryan Hazzard
+            </h1>
+            <h2
+              class="sequenced name"
+              style="display: none;"
+              id="landing-title"
+            >
+              Full Stack Developer
+            </h2>
+          </div>
+          <div class="sixteen wide column" id="landing-arrow-column">
+            <a href="#about-section">
+              <svg class="arrows" style="scroll-behavior: smooth">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- about section  -->
+      <div class="row" id="about-section">
+        <div class="ui grid container" id="about-inner-grid">
+          <div
+            class="eight wide computer sixteen wide mobile middle aligned column"
+          >
+            <img
+              class="ui centered bordered large image"
+              id="about-image"
+              src="/images/about-photo.jpg"
+            />
+          </div>
+          <div
+            class="eight wide computer eight wide tablet sixteen wide mobile middle aligned centered column"
+            id="about-info-column"
+          >
+            <p id="about-section-title">About</p>
+            <div class="text" id="about-text">
+              Ryan Hazzard, 20, born in San Clemente. I am a Full-stack
+              developer proficient with the MERN stack. I am driven to becoming
+              a better developer everyday. I care deeply about writing dry code
+              and am currently looking for a career in which I can contribute
+              and grow as a developer.
             </div>
+          </div>
         </div>
-        <!-- projects section  -->
-        <div class="row" id="project-section">
-            <div class="ui centered grid container">
-                <!-- title column  -->
-                <div class="sixteen wide computer middle aligned column">
-                    <p id="project-section-title">Projects</p>
+      </div>
+      <!-- projects section  -->
+      <div class="row" id="project-section">
+        <div class="ui centered grid container" id="projects-container">
+          <!-- title column  -->
+          <div class="sixteen wide computer middle aligned column">
+            <p id="project-section-title">Projects</p>
+          </div>
+          <!-- vision card  -->
+          <div class="five wide computer only  column">
+            <div class="ui fluid card vision" id="vision-card">
+              <div class="image">
+                <img src="/images/vision.png" />
+              </div>
+            </div>
+          </div>
+          <!-- vision modal  -->
+          <div class="ui modal vision">
+            <i class="close icon"></i>
+            <div class="header">
+              Vision
+            </div>
+            <div class="image content">
+              <div class="image">
+                <img src="/images/vision.png" id="vision-modal-image" />
+              </div>
+              <div class="description">
+                <h2 class="modal-description-title">Details</h2>
+                <ul>
+                  <li>
+                    Application to assist user in creating a social media post.
+                    Get relevant keywords and terms from an image for generating
+                    SEO / Hashtags.
+                  </li>
+                  <p>Design</p>
+                  <li>
+                    Create a single page application which utilizes Google
+                    Vision to return relevant keywords of an image Upload image
+                    to Google Vision API Return relevant image entities Search
+                    synonyms and definition from a relevant entity Users can
+                    copy selected SEO / Hashtags to clipboard
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="ui grid">
+                <div class="centered column">
+                  <a
+                    target="_blank"
+                    href="https://github.com/Ryanh899/project-1.git"
+                  >
+                    <div class="ui primary button modalButton">View</div>
+                  </a>
                 </div>
-                <!-- vision card  -->
-                <div class="five wide computer only  column">
-                    <div class="ui fluid card vision" id="vision-card" >
-                        <div class="image">
-                            <img src="/images/vision.png">
-                        </div>
+              </div>
+            </div>
+          </div>
+          <!-- books card  -->
+          <div
+            class="five wide computer eight wide tablet sixteen wide mobile column"
+          >
+            <div class="ui fluid card" id="books-card">
+              <div class="image">
+                <img id="books-image" src="/images/books.ico" />
+              </div>
+            </div>
+          </div>
+          <!-- books modal  -->
+          <div class="ui modal books">
+            <i class="close icon"></i>
+            <div class="header">
+              Book Search
+            </div>
+            <div class="image content">
+              <div class="image">
+                <img src="/images/books.ico" id="vision-modal-image" />
+              </div>
+              <div class="description">
+                <h2 class="modal-description-title">Details</h2>
+                <ul>
+                  <li>
+                    Search for a book by Title, Author, or Genre and then save
+                    the books you want to our library.
+                  </li>
+                  <li>
+                    Created with React, Material UI, Express.js, Node.js,
+                    MongoDB, Mongoose, Google Books API.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="centered column">
+                <a
+                  target="_blank"
+                  href="https://frightful-vampire-68399.herokuapp.com/"
+                >
+                  <div class="ui primary button modalButton">View</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- brew card  -->
+          <div
+            class="five wide computer eight wide tablet sixteen wide mobile column"
+          >
+            <div class="ui fluid card" id="brew-card">
+              <div class="image">
+                <img src="/images/beer.png" />
+              </div>
+            </div>
+          </div>
+          <!-- brew modal  -->
+          <div class="ui modal brew">
+            <i class="close icon"></i>
+            <div class="header">
+              Brew
+            </div>
+            <div class="image content">
+              <div class="image">
+                <img src="/images/beer.png" id="brew-modal-image" />
+              </div>
+              <div class="description">
+                <h2 class="modal-description-title">Details</h2>
+                <ul>
+                  <li>
+                    Get the best deals on your favorite beer at your favorite
+                    spots!
+                  </li>
+                  <li>
+                    Consists of a Web Business Portal and REST API made with
+                    React, React Router, Node.js, Express.js, PostgreSQL, Knex,
+                    Material UI, and AWS as well as a mobile application using
+                    React Native Cli and axios.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="ui grid">
+                <div class="centered eight wide column">
+                  <a
+                    target="_blank"
+                    href="https://github.com/Ryanh899/brew-web"
+                  >
+                    <div class="ui primary button brewModalButton">
+                      View Web App
                     </div>
+                  </a>
                 </div>
-                <!-- vision modal  -->
-                <div class="ui modal vision">
-                    <i class="close icon"></i>
-                    <div class="header">
-                        Vision
+                <div class="centered eight wide column">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ericmackensen/Brew"
+                  >
+                    <div class="ui primary button brewModalButton">
+                      View Mobile App
                     </div>
-                    <div class="image content">
-                        <div class="image">
-                            <img src="/images/vision.png" id="vision-modal-image" >
-                        </div>
-                        <div class="description">
-                            <h2 class='modal-description-title' >Details</h2>
-                            <ul>
-                                <li>
-                                    Application to assist user in creating a social media post. Get relevant keywords and terms from an image for generating SEO / Hashtags.
-                                </li>
-                                <p>Design</p>
-                                <li>
-                                    Create a single page application which utilizes Google Vision to return relevant keywords of an image
-                                    Upload image to Google Vision API
-                                    Return relevant image entities
-                                    Search synonyms and definition from a relevant entity
-                                    Users can copy selected SEO / Hashtags to clipboard
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="actions">
-                        <div class="ui grid">
-                            <div class="centered column">
-                                <a target="_blank" href="https://github.com/Ryanh899/project-1.git" >
-                                    <div class="ui primary button modalButton">View</div>
-                                </a>
-                            </div>   
-                        </div>
-                    </div>
+                  </a>
                 </div>
-                <!-- books card  -->
-                <div class="five wide computer sixteen wide mobile column">
-                    <div class="ui fluid card" id="books-card" >
-                        <div class="image">
-                            <img id="books-image" src="/images/books.ico">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- skills section  -->
+      <div class="row" id="contact-section">
+        <div class="ui middle aligned grid container">
+            <div class="centered row" id="contact-info-row" >
+                <div class="eight wide computer sixteen wide tablet sixteen wide mobile column" id="contact-info-column" >
+                    <div class="ui grid container" id="contact-inner-container" >
+                        <div class="sixteen wide column">
+                            <p id="contact-title" >Lets Connect!</p>
+                            <div class="ui divider"></div>
                         </div>
-                    </div>
-                </div>
-                <!-- books modal  -->
-                <div class="ui modal books">
-                    <i class="close icon"></i>
-                    <div class="header">
-                        Book Search
-                    </div>
-                    <div class="image content">
-                        <div class="image">
-                            <img src="/images/books.ico" id="vision-modal-image" >
+                        <div class="sixteen wide column">
+                            <p id="contact-info-name" >Ryan Hazzard</p>
                         </div>
-                        <div class="description">
-                            <h2 class='modal-description-title' >Details</h2>
-                            <ul>
-                                <li>
-                                    Search for a book by Title, Author, or Genre and then save the books you want to our library. 
-                                </li>
-                                <li>
-                                    Created with React, Material UI, Express.js, Node.js, MongoDB, Mongoose, Google Books API. 
-                                </li>
-                            </ul>
+                        <div class="sixteen wide column">
+                            <p id="contact-email" >Email: Rhazzardphoto@gmail.com</p>
                         </div>
-                    </div>
-                    <div class="actions">
-                        <div class="centered column">
-                            <a target="_blank" href="https://frightful-vampire-68399.herokuapp.com/" >
-                                <div class="ui primary button modalButton">View</div>
+                        <div class="sixteen wide column">
+                            <p id="contact-phone" >949-545-3515</p>
+                        </div>
+                        <div class="sixteen wide column">
+                            <a
+                            target="_blank"
+                            href="https://docs.google.com/document/d/179sKKqYy2Sxgpd_7olH7EXEzCldP6Yzz/edit"
+                            >
+                                <p id="contact-resume" >Resume</p>
                             </a>
                         </div>
-                    </div>
-                </div>
-                <!-- brew card  -->
-                <div class="five wide computer sixteen wide mobile column">
-                    <div class="ui fluid card" id="brew-card" >
-                        <div class="image">
-                            <img src="/images/beer.png">
-                        </div>
-                    </div>
-                </div>
-                <!-- brew modal  -->
-                <div class="ui modal brew">
-                    <i class="close icon"></i>
-                    <div class="header">
-                        Brew
-                    </div>
-                    <div class="image content">
-                        <div class="image">
-                            <img src="/images/beer.png" id="brew-modal-image" >
-                        </div>
-                        <div class="description">
-                            <h2 class='modal-description-title' >Details</h2>
-                            <ul>
-                                <li>
-                                    Get the best deals on your favorite beer at your favorite spots! 
-                                </li>
-                                <li>
-                                    Consists of a Web Business Portal and REST API made with React, React Router, Node.js, Express.js, PostgreSQL, Knex, Material UI, and AWS as well as a mobile application using React Native Cli and axios.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="actions">
-                        <div class="ui grid">
-                            <div class="centered eight wide column">
-                                <a target="_blank" href="https://github.com/Ryanh899/brew-web" >
-                                    <div class="ui primary button brewModalButton">View Web App</div>
-                                </a>
+                        <div class="row">
+                            <div class="eight wide centered column">
+                                <i class="huge github icon"></i>
                             </div>
-                            <div class="centered eight wide column">
-                                <a target="_blank" href="https://github.com/ericmackensen/Brew" >
-                                    <div class="ui primary button brewModalButton">View Mobile App</div>
-                                </a>
+                            <div class="eight wide centered column">
+                                <i class="huge linkedin icon"></i>
                             </div>
                         </div>
-                    </div>
-                </div>  
-            </div>
-        </div>
-        <!-- skills section  -->
-        <div class="row" id="skills-section">
-            <div class="ui grid container">
-                <div class="centered row">
-                    <!-- title column  -->
-                    <!-- fade in or fade in right  -->
-                    <div class="six wide black column workPage" id="work-page-title" >
-                        <p id="work-page-title-text" >Lets Talk!</p>
                     </div>
                 </div>
             </div>
         </div>
+      </div>
     </div>
     <script src="./js/animations.js"></script>
-</body>
-
+  </body>
 </html>
