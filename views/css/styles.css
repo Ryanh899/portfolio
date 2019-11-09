@@ -151,10 +151,11 @@
 
 #skills-section {
     height: 100vh;
-    background-image: url('../images/wave-background.jpg');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+    background: #7F9AA7;
+    /* background-image: url('../images/wave-background.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; */
 }
 
 #skills-title {
@@ -182,3 +183,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* lets work together page  */
+#work-page-title {
+    height: 15vh;
+    text-align: center;
+    /* display: none; */
+}
+
+#work-page-title-text {
+    color: #7F9AA7;
+    font-size: 75px;
+}

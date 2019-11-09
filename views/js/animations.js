@@ -11,6 +11,7 @@ $(function() {
     }, 300); 
 });
 
+
 $('.ui.sticky')
   .sticky({
     context: '#page-container'
@@ -31,7 +32,5 @@ $('#brew-card').on('click', function () {
         .modal('show'); 
 })
 
-$('.menu .item')
-  .tab()
-;
+
 
